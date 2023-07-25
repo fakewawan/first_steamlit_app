@@ -4,7 +4,7 @@ import requests;
 import snowflake.connector;
 from urllib.error import URLError;
 
-def get_fruitvice_data(fruit_choice)
+def get_fruitvice_data(fruit_choice):
   streamlit.write('The user entered ', fruit_choice)
   fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
   streamlit.text(fruityvice_response.json())
