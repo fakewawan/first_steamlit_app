@@ -65,6 +65,6 @@ if streamlit.button('Get Fruit List'):
  
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 if streamlit.button("Add a fruit"):
-streamlit.write(insert_row_fruit_snowflake(add_my_fruit))
+  streamlit.write(insert_row_fruit_snowflake(add_my_fruit))
 
 streamlit.stop();
