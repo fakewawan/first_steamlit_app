@@ -20,7 +20,7 @@ def get_fruit_load_list():
 
 def insert_row_fruit_snowflake(add_fruit):
   with my_cnx.cursor() as my_cur:
-    my_cur.execute("insert into fruit_load_list values ('+add_my_fruit')")
+    my_cur.execute("insert into fruit_load_list values ('from streamlit')")
     return "Thanks for Adding "+ add_fruit
 
 #my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt");
